@@ -17,6 +17,9 @@ spring:
   servlet:
     multipart:
       max-file-size: 20MB
+  cache:
+    redis:
+      time-to-live: 1800000 #设置缓存有效期
   redis:
     host: centos
     port: 6379
